@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+body {
+    background-image: linear-gradient(#646262, #efffff);
+    font-family: lato, Helvetica, sans-serif;
+    font: 1em, 'Lato', sans-serif;
+    margin: 0.5em;
+}
+
+nav[role="full-horizontal"] {
+    width: 100%;
+    background: rgb(212, 212, 210);
+}
+
+nav[role="full-horizontal"]:after {
+    content: " ";
+    display: table;
+    clear: both;
+} 
+
+nav[role="full-horizontal"] ul {
+    background-color:black;
+    list-style: none;
+    width: 100%;
+    }
+
+nav[role="full-horizontal"] ul>li {
+    background: rgb(212, 212, 210);
+    text-transform: uppercase;
+    cursor: pointer;
+    float: left;
+    margin: 1.25em 1em;
+    padding: 1.25em 1em;
+    text-align: center;
+    font-weight: bold;
+}
+nav[role="full-horizontal"] ul>li a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+
+nav[role="full-horizontal"] ul>li a:hover {
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+}
+
+nav[role="full-horizontal"] ul>li:hover a {
+    color: rgb(212, 212, 210);
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    nav[role="full-horizontal"] ul>li {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav[role="full-horizontal"] ul>li a{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav[role="full-horizontal"] ul>li:hover{
+        width: 100%;
+        background-color: rgb(31, 29, 29);
+        border-radius: 10px;
+    }
+}
